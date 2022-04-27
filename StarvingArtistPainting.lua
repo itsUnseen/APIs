@@ -76,7 +76,7 @@ local lib = {};
 		return json(image);
 	end;
 
-	function lib:copy(plr: string, a: number, t: number, n: bool, s: string)
+	function lib:copy(plr, a, t, n, s)
 
         p = game.Players[plr]
 
@@ -116,7 +116,7 @@ local lib = {};
 		if n then player.notify("Finish", "Finished at ".. os.date("%b. %d, %H:%M", os.time()) .. ", time taken: ".. os.time() - start .."s") end;
 	end;
 
-	function lib:import(i: string, t: number, n: bool, s: string)
+	function lib:import(i, t, n, s)
 		
 		t = t or 0.05;
 		s = s or "random";
